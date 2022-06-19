@@ -1,0 +1,156 @@
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Light-grayish-cyan2: hsl(189, 41%, 97%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Light-grayish-cyan);
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  border-radius: 20px;
+  background-color: white;
+  width: 70%;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  width: 46%;
+}
+
+.bill input,
+.select-tip input,
+.number-of-people input {
+  width: 100%;
+  background-color: var(--Light-grayish-cyan2);
+  border: 0;
+  height: 60px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--Very-dark-cyan);
+}
+
+.bill img,
+.number-of-people img {
+  position: relative;
+  top: -40px;
+  left: 20px;
+}
+
+.select-tip {
+  margin-bottom: 40px;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tip {
+  cursor: pointer;
+  border: 0;
+  background-color: var(--Very-dark-cyan);
+  color: white;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  line-height: 4.5rem;
+  transition: background 0.2s ease;
+}
+
+.active {
+  background-color: var(--Strong-cyan);
+}
+
+.custom {
+  background-color: var(--Light-grayish-cyan2);
+  color: grey;
+}
+
+.info {
+  width: 63%;
+  margin: 4rem 3rem;
+}
+
+.total {
+  margin-top: 30px;
+}
+
+.tip-amount,
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tip-amount-text,
+.total-text {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.tip-amount-text span,
+.total-text span {
+  color: var(--Light-grayish-cyan2);
+  font-size: 1rem;
+}
+
+.tip-amount-number,
+.total-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--Strong-cyan);
+}
+
+.button {
+  cursor: pointer;
+  width: 71%;
+  border: 0;
+  color: var(--Very-dark-cyan);
+  background-color: var(--Strong-cyan);
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 7px;
+  text-transform: uppercase;
+  line-height: 4.2rem;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
